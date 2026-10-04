@@ -266,6 +266,7 @@ jobs:
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
           RELEASE_SHA: ${{ needs.sync.outputs.sha }}
           RELEASE_TAG: ${{ needs.sync.outputs.tag }}
           RELEASE_VERSION: ${{ needs.sync.outputs.version }}
